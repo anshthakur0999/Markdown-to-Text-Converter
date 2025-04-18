@@ -47,6 +47,3 @@ npm run dev
 - html-docx-js - HTML to DOCX conversion
 - Multer - Form data handling
 
-## License
-
-MIT 
