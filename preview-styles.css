@@ -1,0 +1,129 @@
+/* Preview styles to match DOCX output */
+:root {
+    --preview-text-color: #000;
+    --preview-bg-color: #fff;
+    --preview-code-bg: #f5f5f5;
+    --preview-blockquote-border: #ccc;
+    --preview-table-border: #ddd;
+    --preview-table-header-bg: #f2f2f2;
+    --preview-table-alt-row: #f9f9f9;
+    --preview-link-color: #0563c1;
+}
+
+[data-theme="dark"] {
+    --preview-text-color: #f0f0f0;
+    --preview-bg-color: #2d2d2d;
+    --preview-code-bg: #282c34;
+    --preview-blockquote-border: #666;
+    --preview-table-border: #555;
+    --preview-table-header-bg: #3d3d3d;
+    --preview-table-alt-row: #333;
+    --preview-link-color: #61afef;
+}
+
+#preview {
+    font-family: 'Calibri', Arial, sans-serif;
+    line-height: 1.5;
+    color: var(--preview-text-color);
+    padding: 20px;
+    background-color: var(--preview-bg-color);
+}
+
+#preview h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    color: var(--preview-text-color);
+    text-align: left;
+}
+
+#preview h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: var(--preview-text-color);
+}
+
+#preview h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 18px;
+    margin-bottom: 9px;
+    color: var(--preview-text-color);
+}
+
+#preview p {
+    margin-bottom: 10px;
+}
+
+#preview ul, #preview ol {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+#preview li {
+    margin-bottom: 5px;
+}
+
+#preview blockquote {
+    font-style: italic;
+    border-left: 3px solid var(--preview-blockquote-border);
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#preview pre, #preview code {
+    font-family: 'Courier New', monospace;
+    background-color: var(--preview-code-bg);
+    padding: 5px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+#preview pre {
+    padding: 10px;
+    white-space: pre-wrap;
+}
+
+#preview strong {
+    font-weight: bold;
+}
+
+#preview em {
+    font-style: italic;
+}
+
+#preview a {
+    color: var(--preview-link-color);
+    text-decoration: underline;
+}
+
+#preview img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#preview table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#preview th, #preview td {
+    border: 1px solid var(--preview-table-border);
+    padding: 8px;
+    text-align: left;
+}
+
+#preview th {
+    background-color: var(--preview-table-header-bg);
+    font-weight: bold;
+}
+
+#preview tr:nth-child(even) {
+    background-color: var(--preview-table-alt-row);
+}

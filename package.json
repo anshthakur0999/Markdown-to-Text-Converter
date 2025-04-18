@@ -1,0 +1,39 @@
+{
+  "name": "markdown-to-docx-converter",
+  "version": "1.0.0",
+  "description": "A web-based tool to convert Markdown to DOCX files",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "@radix-ui/react-dialog": "^1.1.7",
+    "@radix-ui/react-dropdown-menu": "^2.1.7",
+    "@radix-ui/react-select": "^2.1.7",
+    "@radix-ui/react-slot": "^1.2.0",
+    "@radix-ui/react-tabs": "^1.1.4",
+    "@radix-ui/react-toggle": "^1.1.3",
+    "autoprefixer": "^10.4.21",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "docx": "^8.0.4",
+    "express": "^4.18.2",
+    "jsdom": "^22.1.0",
+    "lucide-react": "^0.488.0",
+    "marked": "^4.3.0",
+    "multer": "^1.4.5-lts.1",
+    "node-fetch": "^2.7.0",
+    "postcss": "^8.5.3",
+    "tailwind-merge": "^3.2.0",
+    "tailwindcss": "^4.1.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "author": "",
+  "license": "MIT"
+}

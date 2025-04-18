@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown to DOCX Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="preview-styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Markdown to DOCX Converter</h1>
+        <div class="editor-container">
+            <div class="input-container">
+                <h2>Markdown</h2>
+                <textarea id="markdown-input" placeholder="Enter your markdown here..."></textarea>
+                <div class="editor-toolbar-container"></div>
+            </div>
+            <div class="preview-container">
+                <h2>Preview</h2>
+                <div id="preview"></div>
+            </div>
+        </div>
+        <div class="styling-options">
+            <h2>Document Styling</h2>
+            <div class="style-controls">
+                <div class="style-group">
+                    <label for="font-family">Font:</label>
+                    <select id="font-family">
+                        <option value="Calibri">Calibri</option>
+                        <option value="Arial">Arial</option>
+                        <option value="Times New Roman">Times New Roman</option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="Verdana">Verdana</option>
+                    </select>
+                </div>
+                <div class="style-group">
+                    <label for="font-size">Size:</label>
+                    <select id="font-size">
+                        <option value="11">11pt</option>
+                        <option value="12">12pt</option>
+                        <option value="14">14pt</option>
+                        <option value="16">16pt</option>
+                        <option value="18">18pt</option>
+                    </select>
+                </div>
+
+                <div class="style-group">
+                    <label for="page-size">Page:</label>
+                    <select id="page-size">
+                        <option value="A4">A4</option>
+                        <option value="Letter">Letter</option>
+                        <option value="Legal">Legal</option>
+                    </select>
+                </div>
+                <div class="style-group">
+                    <label for="margin-size">Margins:</label>
+                    <select id="margin-size">
+                        <option value="normal">Normal</option>
+                        <option value="narrow">Narrow</option>
+                        <option value="wide">Wide</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button id="preview-btn">Print Preview</button>
+            <button id="download-btn">Convert to DOCX</button>
+        </div>
+
+        <!-- Print Preview Modal -->
+        <div id="preview-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Print Preview</h2>
+                <div class="print-preview-container">
+                    <div id="print-preview" class="print-preview"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
